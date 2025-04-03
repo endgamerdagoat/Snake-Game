@@ -1,2 +1,2 @@
 # Snake-Game
-JPanel game
+The the classic Snake game, recreated in Java using JPanel.
