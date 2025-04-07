@@ -91,13 +91,9 @@ public class Snake extends JPanel implements ActionListener, KeyListener {
         g.fillRect(0, 0, panelWidth, panelHeight);
         
         
+
         g.setColor(Color.GRAY);
-        for(int r = 0; r < GRID_HEIGHT; r++) {
-            for(int c = 0; c < GRID_WIDTH; c++) {
-                g.drawRect(offsetX + c * dim, offsetY + r * dim, dim, dim);
-            }
-        }
-        
+        g.drawRect(offsetX, offsetY, (GRID_WIDTH) * dim, (GRID_WIDTH) * dim);
         
         for(int i = 0; i < snakeLength; i++) {
             int segX = offsetX + snakeX[i] * dim;
